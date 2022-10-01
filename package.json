@@ -1,19 +1,25 @@
 {
-  "name": "reckless-wonder",
+  "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "",
+    "start": "",
+    "server": "",
+    "build": "",
+    "install": "",
+    "client": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/indy6678/reckless-wonder.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/indy6678/reckless-wonder/issues"
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   },
-  "homepage": "https://github.com/indy6678/reckless-wonder#readme"
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
 }
