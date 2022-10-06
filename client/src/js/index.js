@@ -2,7 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-import { initDb, getDb, putDb } from './database';
+import { initdb, getDb, putDb } from './database';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -34,7 +34,7 @@ if ('serviceWorker' in navigator) {
 }
 
 window.addEventListener('load', function() {
-  initDb();
+  initdb();
   getDb();
   putDb('Ed', 'indy6678@gmail.com', 'github.com/indy6678');
   getDb();
