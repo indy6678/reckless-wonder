@@ -39,3 +39,9 @@ window.addEventListener('load', function() {
   putDb('Ed', 'indy6678@gmail.com', 'github.com/indy6678');
   getDb();
 })
+
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+  navigator.serviceWorker.register('./service-worker.js');
+})};
