@@ -2,6 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
+import { initDb, getDb, putDb } from './database';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -31,3 +32,10 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
+
+window.addEventListener('load', function() {
+  initDb();
+  getDb();
+  putDb('Ed', 'indy6678@gmail.com', 'github.com/indy6678');
+  getDb();
+})
